@@ -28,28 +28,17 @@ The catalog is separate from the data itself (stored in S3), allowing multiple c
 - **Pros**: Open-source, REST API, flexible deployment
 - **Cons**: Self-hosting requires operational overhead
 
-### [Unity Catalog](unity-catalog/) - 🚀 Planned
-- **Type**: Open-source (Databricks-initiated)
-- **Best For**: Multi-modal data (tables, ML models, files)
-- **Pros**: Unified governance, open-source
-- **Cons**: Still maturing
-
-### [Nessie](nessie/) - 🚀 Planned
-- **Type**: Open-source (Git-like versioning)
-- **Best For**: Data versioning, multi-table transactions
-- **Pros**: Git-like semantics, branching/tagging
-- **Cons**: Additional complexity
-
 ## Catalog Comparison
 
-| Feature | Glue | Polaris | Unity | Nessie |
-|---------|------|---------|-------|--------|
-| **Deployment** | Managed | Managed/Self | Self | Self |
-| **REST API** | ✅ | ✅ | ✅ | ✅ |
-| **Multi-cloud** | ❌ | ✅ | ✅ | ✅ |
-| **Open Source** | ❌ | ✅ | ✅ | ✅ |
-| **Versioning** | Basic | Basic | Basic | Advanced |
-| **Maturity** | High | Medium | Medium | Medium |
+| Feature | Glue | Polaris |
+|---------|------|---------|
+| **Deployment** | Managed (AWS) | Managed/Self-hosted |
+| **REST API** | ✅ | ✅ |
+| **Multi-cloud** | ❌ | ✅ |
+| **Open Source** | ❌ | ✅ |
+| **Versioning** | Basic | Basic |
+| **Maturity** | High | Medium |
+| **Best For** | AWS ecosystem | Vendor neutrality |
 
 ## Choosing a Catalog
 
@@ -57,18 +46,10 @@ The catalog is separate from the data itself (stored in S3), allowing multiple c
 - You're all-in on AWS
 - You need Lake Formation integration
 - You want zero operational overhead
+- Using AWS EMR, Athena, or other AWS services
 
 **Use Polaris if:**
 - You want vendor neutrality
 - You need multi-cloud support
 - You prefer open-source solutions
-
-**Use Unity Catalog if:**
-- You need unified governance across data types
-- You're using Databricks
-- You want ML model cataloging
-
-**Use Nessie if:**
-- You need advanced versioning (branches, tags)
-- You want multi-table transactions
-- You're comfortable with operational overhead
+- Want to avoid cloud vendor lock-in

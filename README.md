@@ -59,12 +59,11 @@ iceberg-projects/
 │   ├── snowflake/           # Snowflake SQL scripts
 │   │   ├── glue-catalog/    ✅ Working
 │   │   └── polaris-catalog/ ⚠️  Not Tested
-│   └── [trino, duckdb, emr, databricks]  🚀 Future
+│   └── databricks/          🚀 Future (optional)
 │
 ├── catalogs/                # Catalog configurations
 │   ├── glue/               # AWS Glue setup
-│   ├── polaris/            # Polaris setup
-│   └── [unity-catalog, nessie]  🚀 Future
+│   └── polaris/            # Polaris setup
 │
 ├── genai/                  # GenAI learning and implementations
 │   ├── 01-fundamentals/    # LLM basics
@@ -151,7 +150,7 @@ See [GenAI Learning Path](genai/README.md) for details.
 - LangChain agents for lakehouse operations
 - MCP servers for unified access
 - Multi-engine benchmarking
-- Trino, DuckDB, EMR integrations
+- Databricks integration (optional)
 
 ## 🤝 Contributing
 

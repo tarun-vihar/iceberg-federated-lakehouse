@@ -6,7 +6,6 @@ This directory contains PySpark-based implementations for accessing Iceberg tabl
 
 - **[glue-catalog](glue-catalog/)** - ✅ PySpark + AWS Glue Catalog integration (Working)
 - **[polaris-catalog](polaris-catalog/)** - ⚠️ PySpark + Polaris Catalog integration (In Progress)
-- **[unity-catalog](unity-catalog/)** - 🚀 PySpark + Unity Catalog integration (Planned)
 
 ## Quick Start
 
