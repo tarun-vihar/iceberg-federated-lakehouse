@@ -1,0 +1,92 @@
+# Python
+*.py[cod]
+*$py.class
+*.so
+__pycache__/
+*.egg-info/
+dist/
+build/
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+
+# Configuration files with secrets
+config.py
+**/config.py
+credentials.json
+*.credentials
+.env
+.env.local
+
+# AWS credentials
+.aws/credentials
+.aws/config
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+*.out
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# JAR files (too large for git, document download instructions instead)
+*.jar
+jars/
+
+# Model files and embeddings (too large)
+*.bin
+*.gguf
+*.safetensors
+models/
+embeddings/
+
+# Vector store data
+chroma_db/
+vector_store/
+*.index
+
+# Snowflake
+snowflake.json
+
+# Mac OS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Coverage reports
+htmlcov/
+.coverage
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
