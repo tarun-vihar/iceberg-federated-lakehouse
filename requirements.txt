@@ -1,0 +1,160 @@
+# ========================================================================
+# Python Dependencies for Federated Lakehouse Project
+# ========================================================================
+# Install: pip install -r requirements.txt
+# Note: PySpark requires Java 11+ to be installed separately
+# ========================================================================
+
+# ========================================================================
+# Core Data Processing
+# ========================================================================
+
+# PySpark - Apache Spark Python API
+pyspark==3.5.0
+
+# Findspark - Locate Spark installation
+findspark==2.0.1
+
+# PyArrow - Columnar data format (used by Spark)
+pyarrow==14.0.1
+
+# ========================================================================
+# AWS & Cloud Integration
+# ========================================================================
+
+# Boto3 - AWS SDK for Python
+boto3==1.34.28
+
+# AWS CLI - Command line tools (optional but recommended)
+awscli==1.32.28
+
+# ========================================================================
+# Jupyter & Notebook Tools
+# ========================================================================
+
+# Jupyter Notebook
+jupyter==1.0.0
+notebook==7.0.6
+
+# IPython - Interactive Python shell
+ipython==8.18.1
+
+# Jupyter SQL Magic - SQL queries in notebooks
+jupysql==0.10.0
+
+# ========================================================================
+# GenAI & LLM Libraries (for future use)
+# ========================================================================
+
+# OpenAI API client
+openai==1.6.1
+
+# Anthropic API client (Claude)
+anthropic==0.8.1
+
+# LangChain - LLM application framework
+langchain==0.1.0
+langchain-core==0.1.10
+langchain-community==0.0.13
+
+# LlamaIndex - Data framework for LLMs
+llama-index==0.9.30
+
+# Hugging Face Transformers
+transformers==4.36.2
+
+# Sentence Transformers - Text embeddings
+sentence-transformers==2.2.2
+
+# ========================================================================
+# Vector Databases (for GenAI/RAG)
+# ========================================================================
+
+# ChromaDB - Embeddings database
+chromadb==0.4.22
+
+# Pinecone - Vector database client
+pinecone-client==2.2.4
+
+# Weaviate - Vector database client
+weaviate-client==3.26.0
+
+# ========================================================================
+# Data Validation & Quality
+# ========================================================================
+
+# Pandas - Data manipulation
+pandas==2.1.4
+
+# NumPy - Numerical computing
+numpy==1.26.2
+
+# ========================================================================
+# Configuration & Utilities
+# ========================================================================
+
+# Python-dotenv - Load environment variables from .env files
+python-dotenv==1.0.0
+
+# PyYAML - YAML parser
+pyyaml==6.0.1
+
+# Requests - HTTP library
+requests==2.31.0
+
+# ========================================================================
+# Development Tools
+# ========================================================================
+
+# Black - Code formatter
+black==23.12.1
+
+# Flake8 - Linting
+flake8==7.0.0
+
+# Pytest - Testing framework
+pytest==7.4.3
+
+# MyPy - Static type checker
+mypy==1.8.0
+
+# ========================================================================
+# Optional: Snowflake Connector (if using Snowflake Python API)
+# ========================================================================
+
+# snowflake-connector-python==3.6.0
+# snowflake-sqlalchemy==1.5.1
+
+# ========================================================================
+# Notes:
+# ========================================================================
+#
+# PREREQUISITES (Install separately):
+# - Python 3.11+
+# - Java 11+ (for PySpark)
+# - AWS CLI (configured with credentials)
+# - Snowflake Account (for Snowflake demos)
+#
+# INSTALLATION:
+#
+# 1. Create virtual environment:
+#    python3 -m venv venv
+#    source venv/bin/activate  # On Windows: venv\Scripts\activate
+#
+# 2. Upgrade pip:
+#    pip install --upgrade pip
+#
+# 3. Install core dependencies:
+#    pip install -r requirements.txt
+#
+# 4. For minimal PySpark-only setup:
+#    pip install pyspark findspark pyarrow boto3 jupyter python-dotenv
+#
+# 5. For GenAI features:
+#    pip install openai anthropic langchain llama-index chromadb
+#
+# VERIFY INSTALLATION:
+#    python -c "import pyspark; print(pyspark.__version__)"
+#    python -c "import findspark; findspark.init(); print('Spark found!')"
+#
+# ========================================================================

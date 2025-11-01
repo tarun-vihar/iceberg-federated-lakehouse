@@ -1,0 +1,36 @@
+# ========================================================================
+# Minimal Dependencies - Core PySpark & AWS Glue Demo
+# ========================================================================
+# Install: pip install -r requirements-minimal.txt
+# Use this for basic lakehouse functionality only (no GenAI)
+# ========================================================================
+
+# PySpark - Apache Spark Python API
+pyspark==3.5.0
+
+# Findspark - Locate Spark installation
+findspark==2.0.1
+
+# PyArrow - Columnar data format
+pyarrow==14.0.1
+
+# Boto3 - AWS SDK for Python (for Glue, S3)
+boto3==1.34.28
+
+# Jupyter - For running notebooks
+jupyter==1.0.0
+notebook==7.0.6
+
+# Python-dotenv - Load credentials from .env files
+python-dotenv==1.0.0
+
+# Pandas - Data manipulation
+pandas==2.1.4
+
+# ========================================================================
+# Installation:
+# ========================================================================
+# python3 -m venv venv
+# source venv/bin/activate
+# pip install -r requirements-minimal.txt
+# ========================================================================
