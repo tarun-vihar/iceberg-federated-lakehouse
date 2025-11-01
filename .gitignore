@@ -73,6 +73,15 @@ vector_store/
 # Snowflake
 snowflake.json
 
+# Credentials and API Keys
+credentials/*.env
+credentials/*.json
+credentials/api-keys.*
+!credentials/*.template.*
+!credentials/README.md
+!credentials/.gitkeep
+apikeys
+
 # Mac OS
 .DS_Store
 .AppleDouble
@@ -90,4 +99,3 @@ htmlcov/
 .mypy_cache/
 .dmypy.json
 dmypy.json
-apikeys
